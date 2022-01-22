@@ -1,10 +1,22 @@
 [package]
 name = "pyxis-fs-client"
-version = "0.0.0"
+version = "0.1.0"
+authors = ["chordtoll <git@chordtoll.com>"]
 edition = "2021"
 description = "Pyxis network filesystem- client code"
 license = "MIT"
+repository = "https://github.com/chordtoll/pyxis-fs-client"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[package.metadata.arch]
+arch = ["x86_64"]
 
 [dependencies]
+clap = { version = "3.0.10", features = ["cargo"] }
+env_logger = "0.9.0"
+fuser = "0.10.0"
+futures = "0.3.19"
+libc = "0.2.113"
+pyxis-fs-common = "0.1.0"
+quinn = "0.8.0"
+rustls = "0.20.2"
+tokio = { version = "1.15.0", features = ["macros", "rt-multi-thread"] }
