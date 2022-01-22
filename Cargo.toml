@@ -1,6 +1,6 @@
 [package]
 name = "pyxis-fs-client"
-version = "0.1.0"
+version = "1.0.0"
 authors = ["chordtoll <git@chordtoll.com>"]
 edition = "2021"
 description = "Pyxis network filesystem- client code"
